@@ -42,8 +42,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['Amount'];?></td>
             <td><?php echo $Result['Total'];?></td>
             <td>
-                <a href="edit.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-light" >EDIT</a>
-                <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-warning"onclick="return confirm('Confirm data deletion?')">DELETE</a>
+                <a href="edit.php?Id=<?php echo $Result['Id']?>" class="btn btn-outline-light" >EDIT</a>
+                <a href="del.php?Id=<?php echo $Result['Id']?>" class="btn btn-outline-warning"onclick="return confirm('Confirm data deletion?')">DELETE</a>
                 </tr>
         </tbody>
 <?php
