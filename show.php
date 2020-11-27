@@ -23,7 +23,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <table class = "table table-dark" width="1200" align="center" border="1">
         <thead class="thead-dark">
     <tr>
-        <th width="300"> <div align="center">Id</div></th>
+        <th width="300"> <div align="center">id</div></th>
         <th width="300"> <div align="center">product</div></th>
         <th width="300"> <div align="center">price</div></th>
         <th width="300"> <div align="center">amount</div></th>
@@ -42,8 +42,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['Amount'];?></td>
             <td><?php echo $Result['Total'];?></td>
             <td>
-                <a href="edit.php?ID=<?php echo $Result['Id']?>" class="btn btn-outline-light" >EDIT</a>
-                <a href="del.php?ID=<?php echo $Result['Id']?>" class="btn btn-outline-warning"onclick="return confirm('Confirm data deletion?')">DELETE</a>
+                <a href="edit.php?Id=<?php echo $Result['Id']?>" class="btn btn-outline-light" >EDIT</a>
+                <a href="del.php?Id=<?php echo $Result['Id']?>" class="btn btn-outline-warning"onclick="return confirm('Confirm data deletion?')">DELETE</a>
                 </tr>
         </tbody>
 <?php
